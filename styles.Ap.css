@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Underdog", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.main_box {
+    background: url("photo.Ap.jpg");
+    height: 100vh;
+    background-size: cover;
+    cursor:progress;
+}
+
+.btn_one {
+    color:aliceblue;
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    left: 16px;
+    line-height:60px;
+
+}
+
+.sidebar_menu {
+    position:fixed;
+    left:-350px;
+    height: 100vh;
+    width:300px;
+    background-color:rgba(67, 65, 65, 0.34);
+    box-shadow:0 0 10px rgba(230, 230, 228, 0.462);
+    transition:  all 0.10s linear;
+
+}
+
+.sidebar_menu .logo {
+    position:absolute;
+   
+    width:100%;
+    line-height:60px;
+    box-shadow:0 2px 4px rgb(255, 254, 252);
+    height:60px;
+
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    width:100%;
+    left:55px;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:600;
+}
+.btn_two {
+    color:rgb(227, 220, 220);
+    position: absolute;
+    font-size:25px;
+    left:275px;
+    top:17px;
+}
+
+.sidebar_menu .menu{
+    position:absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.sidebar_menu .menu li {
+    margin: 10px;
+    padding: 10px 15px;
+}
+.sidebar_menu .menu i,a{
+    color:white;
+    opacity:0.5;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+     margin-right: 7px;
+}
+.sidebar_menu .social_media{
+    position:absolute;
+    left:25%;
+    bottom:50px;
+}
+
+.sidebar_menu .social_media i{
+    color:white;
+    opacity: 0.5;
+    padding:0.5px;
+}
+#check {
+    display:none
+}
+.sidebar_menu .menu li:hover{
+      box-shadow:0 0 4px rgb(248, 248, 248);
+}
+
+.btn_one i:hover {
+    font-size:33px;
+}
+.btn_two i:hover {
+    font-size:33px;
+}
+.sidebar_menu .social_media i:hover{
+   opacity:1;
+   transform:scale(1.5);
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0;
+  
+}
+ #check:checked ~ .btn_one i {
+    opacity:0;
+ }
